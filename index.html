@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        #header{
+            background-color: rgb(59, 3, 3);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        
+           
+        .navbar ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            width: 150%;
+        cursor: pointer;
+        }
+        .navbar ul li a:hover{
+        color: rgb(161, 161, 190);
+        
+        }
+        .search-bar{
+            background-color: rgba(151, 11, 11, 0.116);
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input{
+           flex: 1;
+           height: 22px;
+        margin-left: 300px;
+        border-radius: 6px;
+        padding-left: 5px;
+        border: none;
+    
+        }
+        input:focus{
+            outline-style: none;
+            box-shadow: none;
+        }
+        .button{
+            margin-right: 300px;
+            height: 24px;
+            margin-left: -35px;
+            border-radius: 6px;
+            border-style: none;
+            cursor: pointer;
+            position: relative;
+        background-color: transparent;
+        }
+       .button:hover{
+       opacity: 0.8;
+       }
+        .tooltip{
+            position: absolute;
+            background-color: gray;
+            color: white;
+            padding: 4px 4px;
+            border-radius: 4px;
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.15s;
+            pointer-events: none;
+        }
+        .button:hover .tooltip{
+            opacity: 1;
+        }
+        #footer{
+            text-align: center;
+            color: rgb(59, 3, 3);
+            font-size: 20px;
+            font-weight: 700;
+            
+        
+            margin-top: 30px;
+        }
+        @media (max-width: 690px) {
+  .navbar ul{
+    display: inline-block;
+    list-style: disc;
+}
+.search-bar{
+display: flex;
+justify-content: center;
+}
+        }
+        @media (min-width: 690px) {
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header id="header">
+        <h1>Web Gang Music Blog</h1> 
+        <nav class="navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Contact</a></li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button class="button" type="submit">
+            <img src="https://cdn1.iconfinder.com/data/icons/web-and-mobile-ui-outline-icon-kit/512/UI_Icons_2-01-512.png" width="25px">
+            <div class="tooltip">Search</div>
+        </button>
+    </div>
+    <section>
+        <article>
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde odio aliquid illum! Nesciunt,
+                 iusto incidunt rem expedita magni necessitatibus. 
+                 Voluptate assumenda error laborum repudiandae ipsam earum commodi, 
+                 pariatur consequatur deleniti architecto sunt perspiciatis 
+                 recusandae praesentium cumque at modi officia illo ipsum aperiam, autem,
+                 quos quam esse. Fugiat quis commodi a?</p>
+        </article>
+        <article>
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde odio aliquid illum! Nesciunt,
+                 iusto incidunt rem expedita magni necessitatibus. 
+                 Voluptate assumenda error laborum repudiandae ipsam earum commodi, 
+                 pariatur consequatur deleniti architecto sunt perspiciatis 
+                 recusandae praesentium cumque at modi officia illo ipsum aperiam, autem,
+                 quos quam esse. Fugiat quis commodi a?</p>
+        </article>
+        <article>
+            <h1>My Blog Post</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde odio aliquid illum! Nesciunt,
+                 iusto incidunt rem expedita magni necessitatibus. 
+                 Voluptate assumenda error laborum repudiandae ipsam earum commodi, 
+                 pariatur consequatur deleniti architecto sunt perspiciatis 
+                 recusandae praesentium cumque at modi officia illo ipsum aperiam, autem,
+                 quos quam esse. Fugiat quis commodi a?</p>
+        </article>
+        <h1>Listen to Burna Boy - Way Too Big Mp3 Here!</h1>
+        <audio src="Burna-Boy-Way-Too-Big (1).mp3" type="mp3" controls loop></audio> 
+        <br>
+        <button><a href="https://cdn.trendybeatz.com/audio/Burna-Boy-Way-Too-Big.mp3">DOWNLOAD Burna Boy - Way Too Big MP3</a> </button>
+        <button><a href="Burna-Boy-Way-Too-Big (1).mp3" download="Burna-Boy-Way-Too-Big (1).mp3">DOWNLOAD Burna Boy - Way Too Big MP3</a> </button> 
+        <br>
+        <br>
+        <h1>Watch Burna Boy - Way Too Big Mp4 Here!</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PFPfxcvRshk?si=ylt9M6mxTp3ml53P" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <select><input type="file"></select>
+    </section>
+    <footer id="footer">
+        <p>Copyright &copy; 2024, WebGangMusicBlog.~All Right Reserved.</p>
+    </footer>
+      
+</body>
+</html>
